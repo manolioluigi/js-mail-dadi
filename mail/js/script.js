@@ -1,5 +1,5 @@
 //variabili
-let mail, button, dado, found;
+let mail, button, found;
 const mailList = ["ettore@gmail.com", "pino@gmail.com", "giovanni@gmail.com", "francesco@gmail.com"]
 
 //prendiamo la mail dall'utente
@@ -21,8 +21,10 @@ button.addEventListener(`click`, function(){
     }
 
     if(found){
+        document.getElementById('risultato').innerHTML = "Sei abilitato ad accedere";
         console.log("Sei abilitato ad accedere");
     } else {
+        document.getElementById('risultato').innerHTML = "Non sei abilitato ad accedere";
         console.log("Non sei abilitato ad accedere");
     }
 
